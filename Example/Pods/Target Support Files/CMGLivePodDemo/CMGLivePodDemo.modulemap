@@ -1,0 +1,6 @@
+framework module CMGLivePodDemo {
+  umbrella header "CMGLivePodDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

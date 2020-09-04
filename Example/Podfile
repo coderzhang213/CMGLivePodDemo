@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CMGLivePodDemo_Example' do
+  pod 'CMGLivePodDemo', :path => '../'
+
+  target 'CMGLivePodDemo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

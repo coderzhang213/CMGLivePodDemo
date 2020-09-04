@@ -1,0 +1,16 @@
+PODS:
+  - CMGLivePodDemo (0.1.0)
+
+DEPENDENCIES:
+  - CMGLivePodDemo (from `../`)
+
+EXTERNAL SOURCES:
+  CMGLivePodDemo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CMGLivePodDemo: abab0c2a55fcf83bbdd977f166dc976bbe1f51c1
+
+PODFILE CHECKSUM: 9c86ec535559998690f344a2436e4a77b1110815
+
+COCOAPODS: 1.9.3
