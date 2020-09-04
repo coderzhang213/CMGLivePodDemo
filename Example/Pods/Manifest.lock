@@ -19,13 +19,11 @@ PODS:
     - Masonry
     - MMLayout
     - SDWebImage
-    - TXLiteAVSDK_Player
   - Masonry (1.1.0)
   - MMLayout (0.3.0)
   - SDWebImage (5.9.0):
     - SDWebImage/Core (= 5.9.0)
   - SDWebImage/Core (5.9.0)
-  - TXLiteAVSDK_Player (7.1.8775)
 
 DEPENDENCIES:
   - CMGLivePodDemo (from `../`)
@@ -36,7 +34,6 @@ SPEC REPOS:
     - Masonry
     - MMLayout
     - SDWebImage
-    - TXLiteAVSDK_Player
 
 EXTERNAL SOURCES:
   CMGLivePodDemo:
@@ -44,11 +41,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CMGLivePodDemo: dde0f8e3069c3a4c050ef1460ef260a60a1984b7
+  CMGLivePodDemo: 32187eabfa81127c279a6be8fb3de2b1620378d2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMLayout: d559edecd69fbcb348368ba90917e047ab1c544e
   SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
-  TXLiteAVSDK_Player: 66ec5d2007064e4ff6205e5bd2b9e1cc1dc5f643
 
 PODFILE CHECKSUM: 8022c90b983530d6088d2fd0bcf99de07e715246
 
