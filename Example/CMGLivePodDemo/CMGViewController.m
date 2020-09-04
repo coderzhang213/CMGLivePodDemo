@@ -7,7 +7,6 @@
 //
 
 #import "CMGViewController.h"
-
 @interface CMGViewController ()
 
 @end
