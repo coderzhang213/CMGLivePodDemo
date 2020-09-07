@@ -7,41 +7,18 @@
 //
 
 #import "VC.h"
-//#import <SuperPlayer/SuperPlayer.h>
-@interface VC ()
-//<SuperPlayerDelegate>
+#import <PLPlayerKit/PLPlayerKit.h>
 
-//@property (nonatomic,strong) SuperPlayerView *playerView;
-//
-//@property (nonatomic,strong) SuperPlayerModel *playerModel;
+@interface VC ()<PLPlayerDelegate>
+
+@property (nonatomic,strong) PLPlayer *player;
+
 
 @end
 
 @implementation VC
 
-//- (SuperPlayerView *)playerView{
-//
-//    if (!_playerView) {
-//        _playerView = [[SuperPlayerView alloc] initWithFrame:CGRectMake(0,
-//                                                                        0,
-//                                                                        self.view.frame.size.width,
-//                                                                        self.view.frame.size.height)];
-//        _playerView.delegate = self;
-//        _playerView.fatherView = self.view;
-//    }
-//
-//    return _playerView;;
-//}
-//
-//- (SuperPlayerModel *)playerModel{
-//
-//    if (!_playerModel) {
-//        _playerModel = [[SuperPlayerModel alloc] init];
-//        _playerModel.videoURL = @"http://liteavapp.qcloud.com/live/liteavdemoplayerstreamid.flv";
-//    }
-//
-//    return _playerModel;
-//}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,36 +26,61 @@
     
     self.view.backgroundColor = [UIColor redColor];
     
-//    [self.playerView playWithModel:self.playerModel];
+    PLPlayerOption *option = [PLPlayerOption defaultOption];
+    [option setOptionValue:@15 forKey:PLPlayerOptionKeyTimeoutIntervalForMediaPackets];
+    NSURL *url = [NSURL URLWithString:@"http://liteavapp.qcloud.com/live/liteavdemoplayerstreamid.flv"];
+    self.player = [PLPlayer playerWithURL:url option:option];
+    self.player.delegate = self;
+    [self.view addSubview:self.player.playerView];
+    
 }
 
 
-//#pragma mark - SuperPlayerDelegate
-///// 返回事件
-//- (void)superPlayerBackAction:(SuperPlayerView *)player{
-//    
-//    
-//}
-///// 全屏改变通知
-//- (void)superPlayerFullScreenChanged:(SuperPlayerView *)player{
-//    
-//    
-//}
-///// 播放开始通知
-//- (void)superPlayerDidStart:(SuperPlayerView *)player{
-//    
-//    
-//}
-///// 播放结束通知
-//- (void)superPlayerDidEnd:(SuperPlayerView *)player{
-//    
-//    
-//}
-///// 播放错误通知
-//- (void)superPlayerError:(SuperPlayerView *)player errCode:(int)code errMessage:(NSString *)why{
-//    
-//    
-//}
-//// 需要通知到父view的事件在此添加
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [self.player play];
+}
+
+#pragma mark - PLPlayerDelegate
+
+- (void)playerWillBeginBackgroundTask:(nonnull PLPlayer *)player{
+    
+    
+}
+
+- (void)playerWillEndBackgroundTask:(nonnull PLPlayer *)player{
+    
+    
+}
+- (void)player:(nonnull PLPlayer *)player statusDidChange:(PLPlayerStatus)state{
+    
+    
+}
+- (void)player:(nonnull PLPlayer *)player stoppedWithError:(nullable NSError *)error{
+    
+    
+}
+- (void)player:(nonnull PLPlayer *)player loadedTimeRange:(CMTime)timeRange{
+    
+    
+}
+- (void)player:(nonnull PLPlayer *)player willRenderFrame:(nullable CVPixelBufferRef)frame pts:(int64_t)pts sarNumerator:(int)sarNumerator sarDenominator:(int)sarDenominator{
+    
+    
+}
+
+- (void)player:(nonnull PLPlayer *)player SEIData:(nullable NSData *)SEIData ts:(int64_t)ts{
+    
+    
+}
+- (void)player:(nonnull PLPlayer *)player firstRender:(PLPlayerFirstRenderType)firstRenderType{
+    
+    
+}
+- (void)player:(nonnull PLPlayer *)player width:(int)width height:(int)height{
+    
+    
+}
 
 @end
+
