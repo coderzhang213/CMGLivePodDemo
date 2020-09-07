@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CMGLivePodDemo (0.1.15):
+  - CMGLivePodDemo (0.1.16):
     - AFNetworking
     - Masonry
     - MMLayout
@@ -46,7 +46,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CMGLivePodDemo: 55020022d47025341c5841ec2cb545acedafe6d5
+  CMGLivePodDemo: be49e36eea852df921f6282e079d1273dddbc6a7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMLayout: d559edecd69fbcb348368ba90917e047ab1c544e
   PLPlayerKit: a44734dc78c1f8f9fb22c537fa1916612fa46b06
