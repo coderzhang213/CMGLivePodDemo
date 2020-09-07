@@ -93,7 +93,7 @@ THE SOFTWARE.
 
 
 
-## TXLiteAVSDK_Professional
+## TXLiteAVSDK_Player
 
 copyright 2017 tencent Ltd. All rights reserved.
 
