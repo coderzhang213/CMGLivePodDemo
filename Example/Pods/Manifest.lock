@@ -14,18 +14,20 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CMGLivePodDemo (0.1.10):
+  - CMGLivePodDemo (0.1.14):
     - AFNetworking
     - Masonry
     - MMLayout
+    - PLPlayerKit
     - SDWebImage
-    - TXLiteAVSDK_Player
   - Masonry (1.1.0)
   - MMLayout (0.3.0)
+  - PLPlayerKit (3.4.3):
+    - PLPlayerKit/iphoneos (= 3.4.3)
+  - PLPlayerKit/iphoneos (3.4.3)
   - SDWebImage (5.9.0):
     - SDWebImage/Core (= 5.9.0)
   - SDWebImage/Core (5.9.0)
-  - TXLiteAVSDK_Player (7.6.9355)
 
 DEPENDENCIES:
   - CMGLivePodDemo (from `../`)
@@ -35,8 +37,8 @@ SPEC REPOS:
     - AFNetworking
     - Masonry
     - MMLayout
+    - PLPlayerKit
     - SDWebImage
-    - TXLiteAVSDK_Player
 
 EXTERNAL SOURCES:
   CMGLivePodDemo:
@@ -44,11 +46,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CMGLivePodDemo: 9448c8f30f93d4ee4bec7e4549d63ca2c6fc1682
+  CMGLivePodDemo: bac414160345b20d4819f4921dc24166397b1cc9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMLayout: d559edecd69fbcb348368ba90917e047ab1c544e
+  PLPlayerKit: a44734dc78c1f8f9fb22c537fa1916612fa46b06
   SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
-  TXLiteAVSDK_Player: a96437245dfb7644727c17ad6cd8d86ba9465186
 
 PODFILE CHECKSUM: 8022c90b983530d6088d2fd0bcf99de07e715246
 
