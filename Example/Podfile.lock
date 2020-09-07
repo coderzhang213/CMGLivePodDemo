@@ -14,16 +14,18 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CMGLivePodDemo (0.1.5):
+  - CMGLivePodDemo (0.1.6):
     - AFNetworking
     - Masonry
     - MMLayout
     - SDWebImage
+    - TXLiteAVSDK_Professional
   - Masonry (1.1.0)
   - MMLayout (0.3.0)
   - SDWebImage (5.9.0):
     - SDWebImage/Core (= 5.9.0)
   - SDWebImage/Core (5.9.0)
+  - TXLiteAVSDK_Professional (7.6.9360)
 
 DEPENDENCIES:
   - CMGLivePodDemo (from `../`)
@@ -34,6 +36,7 @@ SPEC REPOS:
     - Masonry
     - MMLayout
     - SDWebImage
+    - TXLiteAVSDK_Professional
 
 EXTERNAL SOURCES:
   CMGLivePodDemo:
@@ -41,10 +44,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CMGLivePodDemo: 32187eabfa81127c279a6be8fb3de2b1620378d2
+  CMGLivePodDemo: c7be3adac042a89b4f2243a57ae4a67a35e8607d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMLayout: d559edecd69fbcb348368ba90917e047ab1c544e
   SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
+  TXLiteAVSDK_Professional: 0993da88b243cba8250f027903f8b5f0c08be1fa
 
 PODFILE CHECKSUM: 8022c90b983530d6088d2fd0bcf99de07e715246
 
