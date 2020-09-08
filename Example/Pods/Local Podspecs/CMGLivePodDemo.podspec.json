@@ -1,6 +1,6 @@
 {
   "name": "CMGLivePodDemo",
-  "version": "0.1.16",
+  "version": "0.1.18",
   "summary": "A short description of CMGLivePodDemo.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/coderzhang213/CMGLivePodDemo",
@@ -13,17 +13,18 @@
   },
   "source": {
     "git": "https://github.com/coderzhang213/CMGLivePodDemo.git",
-    "tag": "0.1.16"
+    "tag": "0.1.18"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "CMGLivePodDemo/Classes/**/*",
+  "frameworks": "UIKit",
   "dependencies": {
     "AFNetworking": [
 
     ],
-    "PLPlayerKit": [
+    "TXLiteAVSDK_Player": [
 
     ],
     "SDWebImage": [

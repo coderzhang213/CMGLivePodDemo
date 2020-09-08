@@ -1,10 +1,9 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/PLPlayerKit/Pod/Library"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/TXLiteAVSDK_Player/TXLiteAVSDK_Player/SDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CMGLivePodDemo" "${PODS_ROOT}/Headers/Public/MMLayout" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SDWebImage"
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CMGLivePodDemo" "${PODS_ROOT}/Headers/Public/MMLayout" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SDWebImage" ${PODS_ROOT}/TXLiteAVSDK_Player/TXLiteAVSDK_Player/SDK/TXLiteAVSDK_Player.framework/Headers/
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/CMGLivePodDemo" "${PODS_CONFIGURATION_BUILD_DIR}/MMLayout" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"CMGLivePodDemo" -l"MMLayout" -l"Masonry" -l"SDWebImage" -l"bz2" -l"c++" -l"iconv" -l"resolv" -l"z" -framework "AVFoundation" -framework "AVKit" -framework "Accelerate" -framework "AudioToolbox" -framework "CoreAudio" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreVideo" -framework "Foundation" -framework "ImageIO" -framework "MediaPlayer" -framework "MobileCoreServices" -framework "OpenGLES" -framework "PLPlayerKit" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "VideoToolbox"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"CMGLivePodDemo" -l"MMLayout" -l"Masonry" -l"SDWebImage" -l"c++" -l"iconv" -l"resolv" -l"sqlite3" -l"stdc++" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "TXLiteAVSDK_Player" -framework "UIKit" -framework "VideoToolbox"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
