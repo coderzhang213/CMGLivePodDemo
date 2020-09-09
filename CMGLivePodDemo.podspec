@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMGLivePodDemo'
-  s.version          = '0.1.21'
+  s.version          = '0.1.22'
   s.summary          = 'A short description of CMGLivePodDemo.'
 
 # This description is used to generate tags and improve search results.
@@ -35,13 +35,14 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'CMGLivePodDemo' => ['CMGLivePodDemo/Assets/*.png']
   # }
-
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7 armv7s x86_64' }
   # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'UIKit'
-   s.dependency 'AFNetworking'
+  s.frameworks = 'UIKit'
+#   s.dependency 'AFNetworking'
 #   s.dependency 'PLPlayerKit'
-   s.dependency 'TXLiteAVSDK_Player'
-   s.dependency 'SDWebImage'
-   s.dependency 'MMLayout'
-   s.dependency 'Masonry'
+  s.dependency 'SuperPlayer'
+#   s.dependency 'TXLiteAVSDK_Player'
+#   s.dependency 'SDWebImage'
+#   s.dependency 'MMLayout'
+#   s.dependency 'Masonry'
 end
