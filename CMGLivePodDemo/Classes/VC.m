@@ -7,20 +7,13 @@
 //
 
 #import "VC.h"
-//#import <PLPlayerKit/PLPlayerKit.h>
+#import <SuperPlayer.h>
 
-@interface VC ()
-//<PLPlayerDelegate>
-//
-//@property (nonatomic,strong) PLPlayer *player;
-//
-//@property (nonatomic,strong) UIButton *touchBtn;
-//
-//@property (nonatomic,strong) UILabel *titleLab;
-//
-//@property (nonatomic,strong) UILabel *FPSLab;
-//
-//@property (nonatomic,strong) UILabel *BitratesLab;
+@interface VC ()<SuperPlayerDelegate>
+
+@property (nonatomic,strong) SuperPlayerView *playerView;
+
+@property (nonatomic,strong) SuperPlayerModel *playerModel;
 
 
 
@@ -28,72 +21,34 @@
 
 @implementation VC
 
+- (SuperPlayerView *)playerView{
+    
+    if (!_playerView) {
+        
+        _playerView = [[SuperPlayerView alloc] init];
+        _playerView.delegate = self;
+        _playerView.fatherView = self.view;
+    }
+    
+    return _playerView;
+}
 
-
-//- (UIButton *)touchBtn{
-//
-//    if (!_touchBtn) {
-//        _touchBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2.0 - 100/2.0,
-//                                                               self.view.frame.size.height - 20 - 100,
-//                                                               100,
-//                                                               100)];
-//        _touchBtn.layer.cornerRadius = 100/2.0;
-//        _touchBtn.backgroundColor = [UIColor whiteColor];
-//        [_touchBtn addTarget:self action:@selector(changeVideoStatus) forControlEvents:UIControlEventTouchUpInside];
-//        [_touchBtn setTitle:@"play" forState:UIControlStateNormal];
-//        [_touchBtn setTitle:@"pause" forState:UIControlStateSelected];
-//        [_touchBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//        [_touchBtn setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
-//
-//    }
-//
-//    return  _touchBtn;
-//}
-//
-//- (UILabel *)FPSLab{
-//
-//    if (!_FPSLab) {
-//        _FPSLab = [[UILabel alloc] init];
-//        _FPSLab.backgroundColor = [UIColor clearColor];
-//        _FPSLab.textColor = [UIColor whiteColor];
-//        _FPSLab.font = [UIFont systemFontOfSize:13];
-//
-//    }
-//
-//    return _FPSLab;;
-//}
-//
-//- (UILabel *)BitratesLab{
-//
-//    if (!_BitratesLab) {
-//        _BitratesLab = [[UILabel alloc] init];
-//        _BitratesLab.backgroundColor = [UIColor clearColor];
-//        _BitratesLab.textColor = [UIColor whiteColor];
-//        _BitratesLab.font = [UIFont systemFontOfSize:13];
-//
-//    }
-//
-//    return _BitratesLab;
-//}
-//
-//- (UILabel *)titleLab{
-//
-//    if (!_titleLab) {
-//        _titleLab = [[UILabel alloc] init];
-//        _titleLab.text = @"CMGLivePodDemo";
-//        _titleLab.font = [UIFont systemFontOfSize:30];
-//        _titleLab.textColor = [UIColor whiteColor];
-//        [_titleLab sizeToFit];
-//        _titleLab.backgroundColor = [UIColor clearColor];
-//
-//    }
-//
-//    return _titleLab;;
-//}
+- (SuperPlayerModel *)playerModel{
+    
+    if (!_playerModel) {
+        
+        _playerModel = [[SuperPlayerModel alloc] init];
+        _playerModel.videoURL = @"http://liteavapp.qcloud.com/live/liteavdemoplayerstreamid.flv";
+    }
+    
+    return _playerModel;;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.playerView playWithModel:self.playerModel];
     
 //    PLPlayerOption *option = [PLPlayerOption defaultOption];
 //    [option setOptionValue:@15 forKey:PLPlayerOptionKeyTimeoutIntervalForMediaPackets];
