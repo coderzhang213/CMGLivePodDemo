@@ -14,24 +14,26 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CMGLivePodDemo (0.1.25):
+  - CMGLivePodDemo (0.1.28):
     - SuperPlayer
   - Masonry (1.1.0)
   - MMLayout (0.3.0)
-  - SDWebImage (5.9.0):
-    - SDWebImage/Core (= 5.9.0)
-  - SDWebImage/Core (5.9.0)
-  - SuperPlayer (3.1.2):
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
+  - SuperPlayer (3.2.2):
     - AFNetworking
     - Masonry
     - MMLayout
     - SDWebImage
-    - SuperPlayer/Player (= 3.1.2)
-  - SuperPlayer/Player (3.1.2):
+    - SuperPlayer/Player (= 3.2.2)
+  - SuperPlayer/Player (3.2.2):
     - AFNetworking
     - Masonry
     - MMLayout
     - SDWebImage
+    - TXLiteAVSDK_Player (= 7.1.8775)
+  - TXLiteAVSDK_Player (7.1.8775)
 
 DEPENDENCIES:
   - CMGLivePodDemo (from `../`)
@@ -43,6 +45,7 @@ SPEC REPOS:
     - MMLayout
     - SDWebImage
     - SuperPlayer
+    - TXLiteAVSDK_Player
 
 EXTERNAL SOURCES:
   CMGLivePodDemo:
@@ -50,11 +53,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CMGLivePodDemo: 87c5506003695168dcb489cfb05b702d5bfbbe26
+  CMGLivePodDemo: 8732d6f0d31c6dc9950f9e5296ddef4a6ca09ec9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMLayout: d559edecd69fbcb348368ba90917e047ab1c544e
-  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
-  SuperPlayer: de396e0de3d138f66d644e4dcc3f8d63e310523d
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  SuperPlayer: 8572ea30d64c5cbb476177992527fec0a234271e
+  TXLiteAVSDK_Player: 66ec5d2007064e4ff6205e5bd2b9e1cc1dc5f643
 
 PODFILE CHECKSUM: 8022c90b983530d6088d2fd0bcf99de07e715246
 
