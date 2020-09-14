@@ -7,7 +7,6 @@
 //
 
 #import "CMGAppDelegate.h"
-
 @implementation CMGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

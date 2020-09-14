@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMGLivePodDemo'
-  s.version          = '0.1.27'
+  s.version          = '0.1.28'
   s.summary          = 'A short description of CMGLivePodDemo.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,7 @@ TODO: Add long description of the pod here.
   #   'CMGLivePodDemo' => ['CMGLivePodDemo/Assets/*.png']
   # }
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7 armv7s x86_64' }
+  s.static_framework = true
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
 #   s.dependency 'AFNetworking'
