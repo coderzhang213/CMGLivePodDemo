@@ -49,6 +49,16 @@
     self.view.backgroundColor = [UIColor redColor];
     
     [self.playerView playWithModel:self.playerModel];
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    
+    [super viewDidDisappear:animated];
+    
+    [SuperPlayerWindowShared setSuperPlayer:self.playerView];
+    [SuperPlayerWindowShared show];
+    SuperPlayerWindowShared.backController = self;
 }
 
 

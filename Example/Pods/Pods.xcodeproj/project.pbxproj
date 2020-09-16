@@ -2099,6 +2099,31 @@
 			};
 			name = Release;
 		};
+		06F4EEFD5EE2C211A5C657EFBDF71063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC533050025EDAD39C95D2050BEFB8E /* CMGLivePodDemo.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CMGLivePodDemo/CMGLivePodDemo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CMGLivePodDemo;
+				PRODUCT_NAME = CMGLivePodDemo;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		0B5826566F2C037893A0AAD3DCC172CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 614ED96B4691C9E9954B9900A06F9696 /* Pods-CMGLivePodDemo_Tests.debug.xcconfig */;
@@ -2342,6 +2367,32 @@
 			};
 			name = Debug;
 		};
+		BAA24EE4267EA582BEE8A718C601BBA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7399BA9D3B4C5D82133C73D4DF39912A /* CMGLivePodDemo.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CMGLivePodDemo/CMGLivePodDemo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CMGLivePodDemo;
+				PRODUCT_NAME = CMGLivePodDemo;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BD2C21A20CD08712A9B4D1EA3F8325C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5ED339BC6324B7F9E96D102A962EA750 /* AFNetworking.debug.xcconfig */;
@@ -2365,31 +2416,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		C2F6B6331EC66D1CBF8FC556EF767E13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7399BA9D3B4C5D82133C73D4DF39912A /* CMGLivePodDemo.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CMGLivePodDemo/CMGLivePodDemo-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = CMGLivePodDemo;
-				PRODUCT_NAME = CMGLivePodDemo;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		C3A8C10738C5665F6A785F89BCFB0F3E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2545,30 +2571,6 @@
 			};
 			name = Release;
 		};
-		E05F91631A6DF168B1A79F4F5D016F78 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCC533050025EDAD39C95D2050BEFB8E /* CMGLivePodDemo.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CMGLivePodDemo/CMGLivePodDemo-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = CMGLivePodDemo;
-				PRODUCT_NAME = CMGLivePodDemo;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		EFE32BB27B95D9AAEFDD1B27A84E8934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0ECA416910D12E64C086069C5DA473C /* SuperPlayer.debug.xcconfig */;
@@ -2678,8 +2680,8 @@
 		96A7D282B5D454BC511598A5C9ADAF26 /* Build configuration list for PBXNativeTarget "CMGLivePodDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E05F91631A6DF168B1A79F4F5D016F78 /* Debug */,
-				C2F6B6331EC66D1CBF8FC556EF767E13 /* Release */,
+				06F4EEFD5EE2C211A5C657EFBDF71063 /* Debug */,
+				BAA24EE4267EA582BEE8A718C601BBA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

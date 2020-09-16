@@ -1,6 +1,6 @@
 {
   "name": "CMGLivePodDemo",
-  "version": "0.1.28",
+  "version": "0.1.30",
   "summary": "A short description of CMGLivePodDemo.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/coderzhang213/CMGLivePodDemo",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/coderzhang213/CMGLivePodDemo.git",
-    "tag": "0.1.28"
+    "tag": "0.1.30"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "13.0"
   },
   "source_files": "CMGLivePodDemo/Classes/**/*",
   "pod_target_xcconfig": {
